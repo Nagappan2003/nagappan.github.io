@@ -1,0 +1,102 @@
+/* Basic style */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  margin: 0; /* Resetting default body margin */
+}
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #ff4532;
+  font-size: 50px;
+}
+
+section {
+  position: relative;
+  padding: 15px;
+  width: 90%;
+  margin: 0 auto; /* Center the section horizontally */
+}
+
+p {
+  position: relative;
+  /* clear: right; (clear is generally used for floating elements, not needed here) */
+}
+
+div {
+  position: relative;
+  background-color: gray;
+  border: 3.5px solid black;
+  width: 100%;
+  margin: auto; /* Simplify margin settings */
+}
+
+.sub1, .sub2, .sub3 {
+  float: right;
+  width: 100px;
+  padding: 5px;
+  margin: -3px -3px 0;
+  border: 3.5px solid black;
+  text-align: center;
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.sub1 {
+  background-color: #FFB6C1;
+}
+
+.sub2 {
+  color: white;
+  background-color: #FF0000;
+}
+
+.sub3 {
+  color: black;
+  background-color: rgb(223, 212, 121);
+}
+
+.content {
+  padding: 5px;
+  border: none;
+  background-color: gray;
+  font-family: Helvetica;
+  color: black;
+  margin: 3px;
+  height: 150px;
+  overflow: auto;
+}
+
+.row {
+  width: 90%;
+  margin: 0 auto; /* Center the row horizontally */
+}
+
+/* Desktop version */
+@media (min-width: 992px) {
+  .column-lg-4 {
+      float: left;
+      width: 33.33%;
+  }
+}
+
+/* Tablet version */
+@media (min-width: 768px) and (max-width: 991px) {
+  .colmn-md-6,
+  .colmn-md-12 {
+      float: left;
+      width: 100%; /* Simplify styles for both cases */
+  }
+}
+
+/* Mobile version */
+@media (max-width: 767px) {
+  .colmn-sm-12 {
+      float: left;
+      width: 100%;
+  }
+}
